@@ -1,4 +1,4 @@
-package handler
+package api
 
 import (
 	"fmt"
@@ -7,5 +7,5 @@ import (
 )
 
 func Handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, time.Now().String())
+	fmt.Fprintf(w, time.Now().Format("2006-01-02 15:04:05"))
 }
