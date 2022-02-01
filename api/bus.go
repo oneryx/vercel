@@ -93,12 +93,12 @@ type Departure struct {
 	VehicleID string `json:"vehicle_id"`
 	Name      string `json:"name"`
 	Arrival   struct {
-		Aimed    time.Time `json:"aimed"`
-		Expected time.Time `json:"expected"`
+		Aimed    string `json:"aimed"`
+		Expected string `json:"expected"`
 	} `json:"arrival"`
 	Departure struct {
-		Aimed    time.Time `json:"aimed"`
-		Expected time.Time `json:"expected"`
+		Aimed    string `json:"aimed"`
+		Expected string `json:"expected"`
 	} `json:"departure"`
 	Status               string `json:"status"`
 	Monitored            bool   `json:"monitored"`
